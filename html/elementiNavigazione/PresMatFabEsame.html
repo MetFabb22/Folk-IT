@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Folk-IT/Presentazione</title>
+    <link rel="stylesheet" href="../css/MatteoFabbriEsame.css">
+</head>
+
+<body typeof="WebPage">
+    <header typeof="SiteNavigationElement">
+        <div class="logo-container">
+            <img src="../../immagini/logo.png" alt="Logo">
+            <div class="logo-text">
+                <h1 class="logo" property="title">Folk-IT</h1>
+                <p class="subtitle" property="description">Scopri il Folklore delle tradizioni italiane</p>
+            </div>
+        </div>
+
+        <nav>
+            <div class="breadcrumb">
+                <ul>
+                    <li><a href="../../index.html" property="isPartOf">Home</a></li>
+                     <li><a href="PresMatFabEsame.html" property="isPartOf">Progettazione</a></li>
+                </ul>
+            </div>
+
+            <ul>
+               
+                <li><a href="PresMatFabEsame.html" property="subject">Progettazione</a></li>            
+                <li class="nav-dropdown">
+                    <a href="#">Mappa ▼</a>
+                    <ul class="nav-dropdown-content">
+                        <li><a href="../regioni/MatFabEsameEmilia-Romagna.htlm" property="subject">Emilia-Romagna</a></li>
+                        <li><a href="-">Lombardia</a></li>
+                        <li><a href="-">Piemonte</a></li>
+                        <li><a href="-">Veneto</a></li>
+                        <li><a href="-">Valle d'Aosta</a></li>
+                        <li><a href="-">Trentino</a></li>
+                        <li><a href="-">Friuli</a></li>
+                        <li><a href="-">Liguria</a></li>
+                        <li><a href="-">Marche</a></li>
+                        <li>...</li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+     <main>
+   <div id="unique-section">
+    <div class="wpp-container">
+       
+            <!-- Sezione superiore con testo a sinistra e immagini a destra -->
+            <div class="top-section-wpp">
+                <div class="text-wpp">
+                    <h2>Descrizione del progetto</h2>
+                    <p> <strong>Idea </strong> <br>Progetto di un sito archivistico sulle tradizioni e i racconti del folcrore italiano.</p> 
+                    <p><strong>Brief</strong> <br>  Finalità di divulgare informazioni e rappresentazioni del folcrore italino ad un publico plurimo, senza un targhet estremamente specifico; comunicando con risosre principalmente di scrittura e immagini, puntando ad un accesso da più priattaforme ma rimanendo il più possibile userfriendly.<br> Le risore arrivano da letture relative l folcore, da siti web simili ma meno specifici, puntando ad aggiungere funzionalità utili come i commenti, in modo da arricchire le storie con racconti ed esperienze perosnali, come gli stessi miti e le tradizioni si sono creati nel tempo.</p>
+                    <p><strong>Beanchmark</strong> <br> <a href="https://monstermovieitalia.com/">monstermovieitalia</a>, sito con un layout semplice ma espressivo, che tratta si di folclore italiano, ma anche di altri aspetti della cultura più pop riguardante miti e leggende.<br> 
+                        <a href="https://gnomi.org/">gnomi.org</a>, sito semplice che raccoglie articoli di scrittori amatoriali e non escolusivamente incentrati sul folclore o sulla cultura folcloristica.<br> 
+                        Archetettura di ispirazione: il già citato monstermovieitalia.com è sicuramente interessante con il suo layout intuitivo e votato al analisi del singolo racconto alla volta, ma aggiungerò un elemento in più al mio progetto: la sezione dei commenti; <br> <em>Se bene non presentando la possibilità di una banca dati di riferimento, e di conseguenza quasti ultimi non sono conservabili</em>.<br> Una sorta di richiamo a quasi ogni sito divulgativo o votato all'aspetto di “comunity” per gli utenti, dove vi è un possibile feedback da parte del utilizzatore e ad una sua collaborazione per l’ampliamento del database di informazioni. 
+                    </p>
+                   
+                </div>
+                <div class="images-wpp">
+                    <img class="img-wpp" src="../../immagini/MappaConcettuale.jpg" alt="Mappa Concettuale">
+                    <img class="img-wpp" src="../../immagini/SchDipendenze.jpg" alt="Sch Dipendenze">
+                </div>
+            </div>
+
+            <!-- Sezione inferiore con immagini a sinistra e testo a destra -->
+            <div class="bottom-section-wpp">
+                <div class="images-wpp-bottom">
+                    <img class="img-wpp" src="../../immagini/Wireframe1.jpg" alt="Wireframe 1">
+                    <img class="img-wpp" src="../../immagini/Wireframe2.jpg" alt="Wireframe 2">
+                    <img class="img-wpp" src="../../immagini/Wireframe3.jpg" alt="Wireframe 3">
+                    <img class="img-wpp" src="../../immagini/Wireframe4.jpg" alt="Wireframe 4">
+                </div>
+                <div class="text-wpp-bottom">
+                    
+                    <p> <strong>Architettura</strong><br>
+                        Layout flessibile: L'uso di flexbox per il layout di molte sezioni (come header, main, e footer) consente una distribuzione dinamica degli spazi, rendendo il design reattivo e adattabile a diverse risoluzioni di schermo. Ad esempio, il body è strutturato con display: flex per consentire la gestione fluida degli spazi e una disposizione verticale dei contenuti.<br>
+                        Comportamento responsivo: Sono previsti dei breakpoint specifici per schermi di diverse larghezze, il che assicura una navigazione ottimale su dispositivi mobili e tablet. L'uso di @media per regolare la disposizione degli elementi, le sezioni di contenuto e il menu di navigazione, assicura una buona leggibilità e usabilità anche su schermi più piccoli.<br>
+                        Contenitori e spaziatura: Le classi come utilizzano gap, padding, e margin per gestire gli spazi tra gli elementi in modo chiaro e organizzato. Questo aiuta nella lettura e nella navigazione, evitando un sovraccarico visivo.<br>
+                        Navigazione chiara: La sezione nav e i menu di navigazione come il dropdown sono ben definiti e accessibili, con animazioni morbide sui hover come ad esempio cambio di colore, che migliorano l'interazione. La navigazione è posizionata in modo che gli utenti possano facilmente spostarsi tra le sezioni del sito.<br>
+                        Sezione interattiva: L'uso di una mappa interattiva con marker offre un'interazione visiva e facile da comprendere. I markers sono ben posizionati per non ostacolare altre informazioni e l'interazione è intuitiva.<br>
+                        <strong>Aspetto e tipografia</strong> <br>
+                        Tipografia chiara e leggibile: Il CSS adotta font ben scelti, come 'Roboto' per il testo principale e 'Uncial Antiqua' per gli elementi decorativi. L'uso di diverse dimensioni di font garantisce una gerarchia chiara dei contenuti.<br>
+                        Feedback visivo su interazioni: Elementi come gli :hover sulle immagini e i link danno un feedback visivo chiaro all'utente. Ad esempio, immagini che si ingrandiscono e i link che cambiano colore migliorano l'esperienza utente.<br>
+                        Scelta del font: La selezione di font come 'Roboto' e 'Cormorant Garamond' è un mix ideale tra leggibilità e stile. Il primo è versatile e pulito, mentre il secondo aggiunge un tocco di eleganza e un'atmosfera storica, particolarmente adatto per titoli e sottotitoli.<br>
+                        <strong>Colori, icone e font </strong> <br>
+                        Uso del colore: I colori sono scelti con molta attenzione per garantire un contrasto adeguato e una buona visibilità. I toni principali, come il marrone scuro (#3e2a1e) e il beige (#d4bfa5), sono equilibrati, mentre l’uso di toni più accesi come il dorato (#FFD700) per i titoli rende gli elementi importanti più visibili. L’utilizzo di ombre scure e trasparenze rgba(60, 42, 33, 0.9) rende il design raffinato e non troppo intenso.
+                    </p>
+                    <p><strong> Servizi</strong><br>
+                        Browsing alternativi: mappa interagibile per raggiungere le schede delle regioni.<br>Briciole di pane per ripercorre gli spostamenti nel sito<br>
+                        Mappa del sito nel footer per avere un metodo di navigazione diretto.
+                        Tools: Barra di navigazione con elementi interagibili.<br>Sezione commenti con piccolo codice in javascript per renderla un minimo interattiva<br>elemento dropdown nella barra di navigazine che fa da mappa delle regioni ausiliaria<br>table nella sezione della regione che va a esporre i vari Item<br> elementi link interagibili che emergono in over.<br>
+                        Tools integrativo: mappa iframe nella sezione della regione enel item.
+                    </p>
+                    <p><strong> Biografia </strong><br>
+                        testi:<br> <em>"Megalasso"</em> spunto preso da monstermovieitalia.com<br>
+                        immagini:<br> <em>sfondo</em> multiplayer.it<br>
+                        <em>mappa italia</em> wikipedia.org<br>
+                        <em>Malagasso</em> wp.com<br>
+                        <em>sandorne</em> culturabologna.it<br>
+                        <em>loma Mèrz torre</em> romagnaatavola.it<br>
+                        <em>il biscione emiliano</em> giallozafferano.it<br>
+                        <em>palio di ferrara</em> inferrara.it<br>
+                        <em>il barbaben</em> placidasignora.com
+
+
+                    </p>
+                </div>
+            </div>
+        
+    </div>
+</div>
+</main>
+</div>
+</div>
+    <footer typeof="SiteNavigationElement">
+        <div class="sitemap">
+            <div class="sitemap-container">
+                <div class="sitemap-column">
+                    <h3>Generale</h3>
+                    <ul>
+                        <li><a href="PresMatFabEsame.html" property="subject">Progettazione</a></li>
+                    </ul>
+                </div>
+
+
+                <div class="sitemap-column">
+                    <h3>Figure del Folklore</h3>
+                    <ul>
+                        <li><a href="../archivio/MatFabEsameIlMegalasso.html" property="subject">Il Magalasso</a></li>
+                        <li><a href="-">Sandrone</a></li>
+                        <li><a href="">Il Palio di Ferrara</a></li>
+                        <li>...</li>
+                    </ul>
+                </div>
+
+
+                <div class="sitemap-column">
+                    <h3>Folklore Regionale</h3>
+                    <ul>
+                        <li><a href="regioni/MatFabEsameEmilia-Romagna.html" property="subject">Emilia-Romagna</a></li>
+                        <li><a href="-">Lombardia</a></li>
+                        <li><a href="-">Piemonte</a></li>
+                        <li><a href="-">Veneto</a></li>
+                        <li><a href="-">Valle d'Aosta</a></li>
+                        <li><a href="-">Trentino</a></li>
+                        <li><a href="-">Friuli</a></li>
+                        <li><a href="-">Liguria</a></li>
+                        <li><a href="-">Marche</a></li>
+                        <li>...</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <p>Folk-IT / progetto per Informatica Umanistica</p>
+        <p property="creator">Matteo Fabbri - 0001087603 UniBO</p>
+    </footer>
+</body>
+</html>
